@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="menu-thongtin-chung">
+            <div class="menu-mobile">
+                <div class="menu-nav">
+                    <i class="fa fa-bars menu1" aria-hidden="true"></i>
+                </div>
+                <div class="menu-logo-mobile">
+                    <img src="anh/logo.jpg" style="max-height: 55px;"></img>
+                </div>
+                <div class="menu-giohang">
+                    <a href="/cart" title="Giỏ hàng">
+                        <i class="fa fa-cart-plus" style="font-size: 25px; color: #bc2a2a;"></i>
+                        <div class="cart-right">
+                            <span class="count_item_pr">0</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="menu-thongtin-chung-pc">
+                <div class="menu-thongtin-chung-pc1">
+                    <div class="menu-thongtindangnhap">
+                        <div class="menu-thongtindangnhap1">
+                            <div class="menu-thongtindangnhap-img">
+                                <img src="anh/user.jpg" style="max-height: 55px; margin: 4px 0;">
+                            </div>
+                            <div class="menu-thongtindangnhap-conten">
+                                <p>Đăng Nhập</p>
+                                <p>Nhận nhiều ưu đãi</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="menu-lienhe">
+                        <div class="menu-lienhe-gmail">
+                            <a href="#" class="gmail"><i class="fa fa-envelope" aria-hidden="true"></i>
+                                suppor@gmail.com</a>
+                            <a href="#" class="mail"><i class="fa fa-location-arrow"></i> Miễn phí đơn hàng trên
+                                500k</a>
+                        </div>
+                        <div class="menu-mang-login">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#" class="cuoi"><i class="fa fa-pinterest-p"></i></a></li>
+                            </ul>
+                            <div class="menu-login-dangnhap">
+                                <a href="#"><i class="fa fa-sign-in"></i> Đăng Nhập</a>
+                            </div>
+                            <div class="menu-login-dangky">
+                                <a href="#"><i class="fa fa-user-plus"></i> Đăng Ký</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-thongtin-chung-pc2">
+                    <div class="menu-lienhe-gioithieu">
+                        <div class="menu-gioithieu-logo">
+                            <div class="logo">
+                                <img src="anh/logo.jpg" style="max-height: 65px;">
+                            </div>
+                            <div class="menu-gioithieu">
+                                <ul>
+                                    <li><a href="#" class="link">Trang Chủ</a></li>
+                                    <li><a href="#" class="link">Giới Thiệu</a></li>
+                                    <li class="menu-sanpham"><a href="#" class="bo-di link">Sản Phẩm<i
+                                                class="fa fa-angle-down" style="padding: 2px 5px;"></i></a></li>
+                                    <div class="hienthi-sanpham1">
+                                        <ul>
+                                            <li><a href="#">
+                                                    <img src="anh/banh.jpg">Bánh Mứt</a><i id="myIcon"
+                                                    class="fa fa-plus fa1" aria-hidden="true"
+                                                    onclick="toggleIcon(this)"></i>
+                                                <ul class="noihienthi noihienthi1">
+                                                    <li><a href="#">Mứt Cam</a></li>
+                                                    <li><a href="#">Mứt Vỏ Bưởi</a></li>
+                                                    <li><a href="#">Mứt Dừa</a></li>
+                                                    <li><a href="#">Loại Khác</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#"><img src="anh/banh.jpg">Coffee</a><i id="myIcon"
+                                                    class="fa fa-plus fa2" aria-hidden="true"
+                                                    onclick="toggleIcon(this)"></i>
+                                                <ul class="noihienthi noihienthi2">
+                                                    <li><a href="#">Cà phê trung nguyên</a></li>
+                                                    <li><a href="#">Cà phê Sài Gòn</a></li>
+                                                    <li><a href="#">Cà phê phố</a></li>
+                                                    <li><a href="#">Loại Khác</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#"><img src="anh/banh.jpg">Bánh
+                                                    Ngọt</a><i id="myIcon" class="fa fa-plus fa3" aria-hidden="true"
+                                                    onclick="toggleIcon(this)"></i>
+                                                <ul class="noihienthi noihienthi3">
+                                                    <li><a href="#">Bánh Macaron Pháp</a></li>
+                                                    <li><a href="#">Bánh Mochi Nhật Bản</a></li>
+                                                    <li><a href="#">Bánh Donut Mỹ</a></li>
+                                                    <li><a href="#">Loại Khác</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#"><img src="anh/banh.jpg">Trà
+                                                    Sửa</a><i id="myIcon" class="fa fa-plus fa4" aria-hidden="true"
+                                                    onclick="toggleIcon(this)"></i>
+                                                <ul class="noihienthi noihienthi4">
+                                                    <li><a href="#">Trà sữa thái xanh</a></li>
+                                                    <li><a href="#">Trà sữa trân châu đường đen</a></li>
+                                                    <li><a href="#">Trà sữa chuyền thống</a></li>
+                                                    <li><a href="#">Loại Khác</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#"><img src="anh/banh.jpg">Trà
+                                                    trái cây</a><i id="myIcon" class="fa fa-plus fa5" aria-hidden="true"
+                                                    onclick="toggleIcon(this)"></i>
+                                                <ul class="noihienthi noihienthi5">
+                                                    <li><a href="#">Trà trái cây nhiệt đới</a></li>
+                                                    <li><a href="#">Trà táo kiwi</a></li>
+                                                    <li><a href="#">Trà chanh</a></li>
+                                                    <li><a href="#">Loại Khác</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#"><img src="anh/banh.jpg">Nước
+                                                    ngọt</a><i id="myIcon" class="fa fa-plus fa6" aria-hidden="true"
+                                                    onclick="toggleIcon(this)"></i>
+                                                <ul class="noihienthi noihienthi6">
+                                                    <li><a href="#">Coca Cola</a></li>
+                                                    <li><a href="#">Sting</a></li>
+                                                    <li><a href="#">Mirinda</a></li>
+                                                    <li><a href="#">Loại Khác</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#"><img src="anh/banh.jpg">Thị
+                                                    Khô</a><i id="myIcon" class="fa fa-plus fa7" aria-hidden="true"
+                                                    onclick="toggleIcon(this)"></i>
+                                                <ul class="noihienthi noihienthi7">
+                                                    <li><a href="#">Khô Gà</a></li>
+                                                    <li><a href="#">Khô Bò</a></li>
+                                                    <li><a href="#">Khô Heo</a></li>
+                                                    <li><a href="#">Loại Khác</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="hienthi">
+                                        <div class="hienthi1">
+                                            <div class="hienthi-sanpham2">
+                                                <div class="img">
+                                                    <img src="anh/banhmut.jpg">
+                                                </div>
+
+                                                <ul class="danhsach-menu"><a href="#" class="danhsach-menu-conten">Bánh
+                                                        mứt</a>
+                                                    <div class="menucon">
+                                                        <li><a href="#">Mứt Cam</a></li>
+                                                        <li><a href="#">Mứt Vỏ Bưởi</a></li>
+                                                        <li><a href="#">Mứt Dừa</a></li>
+                                                        <li><a href="#">Loại Khác</a></li>
+                                                    </div>
+                                                </ul>
+
+                                            </div>
+                                            <div class="hienthi-sanpham2">
+                                                <div class="img">
+                                                    <img src="anh/caphe.jpg">
+                                                </div>
+                                                <ul class="danhsach-menu"><a href="#"
+                                                        class="danhsach-menu-conten">Coffee</a>
+                                                    <div class="menucon">
+                                                        <li><a href="#">Cà phê trung nguyên</a></li>
+                                                        <li><a href="#">Cà phê Sài Gòn</a></li>
+                                                        <li><a href="#">CÀ phê phố</a></li>
+                                                        <li><a href="#">Loại Khác</a></li>
+                                                    </div>
+                                                </ul>
+
+                                            </div>
+                                            <div class="hienthi-sanpham2">
+                                                <div class="img">
+                                                    <img src="anh/banhngot.jpg">
+                                                </div>
+                                                <ul class="danhsach-menu"><a href="#" class="danhsach-menu-conten">Bánh
+                                                        Ngọt</a>
+                                                    <div class="menucon">
+                                                        <li><a href="#">Bánh Macaron Pháp</a></li>
+                                                        <li><a href="#">Bánh Mochi Nhật Bản</a></li>
+                                                        <li><a href="#">Bánh Donut Mỹ</a></li>
+                                                        <li><a href="#">Loại Khác</a></li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="hienthi-sanpham2">
+                                                <div class="img">
+                                                    <img src="anh/trasua.jpg">
+                                                </div>
+                                                <ul class="danhsach-menu"><a href="#" class="danhsach-menu-conten">Trà
+                                                        Sữa</a>
+                                                    <div class="menucon">
+                                                        <li><a href="#">Trà sữa thái xanh</a></li>
+                                                        <li><a href="#">Trà sữa trân châu đường đen</a></li>
+                                                        <li><a href="#">Trà sữa chuyền thống</a></li>
+                                                        <li><a href="#">Loại Khác</a></li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="hienthi-sanpham2">
+                                                <div class="img">
+                                                    <img src="anh/tratraicay.jpg">
+                                                </div>
+                                                <ul class="danhsach-menu"><a href="#" class="danhsach-menu-conten">Trà
+                                                        trái cây</a>
+                                                    <div class="menucon">
+                                                        <li><a href="#">Trà trái cây nhiệt đới</a></li>
+                                                        <li><a href="#">Trà táo kiwi</a></li>
+                                                        <li><a href="#">Trà chanh</a></li>
+                                                        <li><a href="#">Loại Khác</a></li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="hienthi-sanpham2">
+                                                <div class="img">
+                                                    <img src="anh/nuocngott.jpg">
+                                                </div>
+                                                <ul class="danhsach-menu"><a href="#" class="danhsach-menu-conten">Nước
+                                                        ngọt</a>
+                                                    <div class="menucon">
+                                                        <li><a href="#">Coca Cola</a></li>
+                                                        <li><a href="#">Sting</a></li>
+                                                        <li><a href="#">Mirinda</a></li>
+                                                        <li><a href="#">Loại Khác</a></li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div class="hienthi-sanpham2">
+                                                <div class="img">
+                                                    <img src="anh/thitkhoo.jpg">
+                                                </div>
+                                                <ul class="danhsach-menu"><a href="#" class="danhsach-menu-conten">Thị
+                                                        Khô</a>
+                                                    <div class="menucon">
+                                                        <li><a href="#">Khô Gà</a></li>
+                                                        <li><a href="#">Khô Bò</a></li>
+                                                        <li><a href="#">Khô Heo</a></li>
+                                                        <li><a href="#">Loại Khác</a></li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <li><a href="#" class="link">Tin Tức</a></li>
+                                    <li><a href="#" class="link">Liên Hệ</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="menu-giohang-pc">
+                            <a href="/cart" title="Giỏ hàng" class="giohang">
+                                <i class="fa fa-cart-plus"></i>
+                                <div class="cart-right-pc">
+                                    <span class="count_item_pr">0</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hos-line">
+                    <h3>Hỗ Trợ</h3>
+                    <div class="thongtin-hos">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p>HOTLINE:</p>
+                        <a href="#">1900000</a>
+                    </div>
+                    <div class="thongtin-hos">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p>EMAIL:</p>
+                        <a href="#">support@sapo.vn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-sanpham-timkiem">
+                <div class="menu-sanpham-timkiem1">
+                    <div class="danhsach-sanpham">
+                        <div class="danhmuc-sanpham">
+                            <h3 class="click-sanpham"><i class="fa fa-list-ul" style="color: var(--chu);"></i> Danh
+                                Mục Sản Phẩm</h3>
+                        </div>
+                        <ul class="hienthi-sanpham">
+                            <li><a href="#">
+                                    <img src="anh/banh.jpg">Bánh Mứt</a></li>
+                            <li><a href="#"><img src="anh/coffe.jpg">Coffee</a></li>
+                            <li><a href="#"><img src="anh/banh.jpg">Bánh Ngọt</a></li>
+                            <li><a href="#"><img src="anh/nuoc.jpg">Trà Sửa</a></li>
+                            <li><a href="#"><img src="anh/nuocngot.jpg">Trà trái cây</a></li>
+                            <li><a href="#"><img src="anh/nuoc.jpg">Nước ngọt các loại</a></li>
+                            <li><a href="#"><img src="anh/thitkho.jpg">Thị Khô</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-timkiem">
+                        <div class="timkiem">
+                            <input type="text" placeholder="bạn muốn mua gì ?">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+
+
+                    <div class="hosline">
+                        <i class="fa fa-phone"></i>
+                        <div class="thongtin-hos">
+                            <h3>1900000</h3>
+                            <p>hỗ trợ 24/7</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide">
+        <img src="anh/slide1.jpg" style="width: 100%;">
+    </div>
+    <div class="thongbao">
+        <div class="thongbao1">
+            <div class="thongbao-container">
+                <div class="thongbao-chung thongbao-chatluong">
+                    <div class="thongbao-chung-img">
+                        <img src="anh/chatluong.jpg">
+                    </div>
+                    <div class="thongbao-chung-conten">
+                        <a href="#">
+                            Bảo đảm chất lượng
+                        </a>
+                        <p>Sản phẩm được đảm bảo chất lượng</p>
+                    </div>
+                </div>
+                <div class="thongbao-chung thongbao-giaohang">
+                    <div class="thongbao-chung-img">
+                        <img src="anh/giaohang.jpg">
+                    </div>
+                    <div class="thongbao-chung-conten">
+                        <a href="#">Miễn phí giao hàng</a>
+                        <p>cho đơn hàng trên 500K</p>
+                    </div>
+                </div>
+                <div class="thongbao-chung thongbao-dienthoai">
+                    <div class="thongbao-chung-img">
+                        <img src="anh/dienthoai.jpg">
+                    </div>
+                    <div class="thongbao-chung-conten">
+                        <a href="#">Hỗ trợ 24/7</a>
+                        <p>HOTLINE: 1900000</p>
+                    </div>
+                </div>
+                <div class="thongbao-chung thongbao-doitra">
+                    <div class="thongbao-chung-img">
+                        <img src="anh/doitra.jpg">
+                    </div>
+                    <div class="thongbao-chung-conten">
+                        <a href="#">Đổi trả hàng</a>
+                        <p>Trong vòng 7 ngày</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="khuyenmai">
+        <div class="khuyenmai1">
+            <div class="khuyenmai-container">
+                <div class="khuyenmai-combo">
+                    <div class="khuyenmai-combo-img">
+                        <img src="anh/combo.jpg">
+                    </div>
+                    <div class="khuyenmai-combo-conten1"></div>
+                    <div class="khuyenmai-combo-conten2"></div>
+                </div>
+                <div class="khuyenmai-quatang">
+                    <div class="khuyenmai-quatang-img">
+                        <img src="anh/quatang.jpg">
+                    </div>
+                    <div class="khuyenmai-quatang-conten1"></div>
+                    <div class="khuyenmai-quatang-conten2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sanpham">
+        <div class="sanpham1">
+            <div class="sanpham-quangcao">
+                <span>Sản phẩm</span>
+                <h1>Khuyễn mãi trong ngày</h1>
+                <p>Trái cây, thị khô, nước ngọt các loại luôn mang tưới mới đến mọi người</p>
+            </div>
+
+            <div class="sanpham-khuyenmai">
+                <ul>
+                    <li><a href="#">Bánh Ngọt</a></li>
+                    <li><a href="#">Trà trái cây</a></li>
+                    <li><a href="#">Trà sữa</a></li>
+                    <li><a href="#">Thị Khô</a></li>
+                </ul>
+            </div>
+            <div class="sanpham-img-contenn">
+                <div class="chung trai" id="traiButton"><i class="fa fa-angle-left"></i></div>
+                <div class="chung phai" id="phaiButton"><i class="fa fa-angle-right"></i></div>
+                <div class="sanpham-img-conten">
+                    <div class="sanpham-img-conten1">
+                        <a href="#">
+                            <div class="sanpham-img">
+                                <img src="anh/banhngot.jpg">
+                                <div class="sanpham-conten">
+                                    <a href="#">Khô heo, Dòng phổ thông</a>
+                                    <div class="sanpham-conten1">
+                                        <p class="p1">80,000đ</p>
+                                        <a href="#" class="p2">thêm vào giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sanpham-img-conten1">
+                        <a href="#">
+                            <div class="sanpham-img">
+                                <img src="anh/banhngot.jpg">
+                                <div class="sanpham-conten">
+                                    <a href="#">Khô heo, Dòng phổ thông</a>
+                                    <div class="sanpham-conten1">
+                                        <p class="p1">80,000đ</p>
+                                        <a href="#" class="p2">thêm vào giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sanpham-img-conten1">
+                        <a href="#">
+                            <div class="sanpham-img">
+                                <img src="anh/banhngot.jpg">
+                                <div class="sanpham-conten">
+                                    <a href="#">Khô heo, Dòng phổ thông</a>
+                                    <div class="sanpham-conten1">
+                                        <p class="p1">80,000đ</p>
+                                        <a href="#" class="p2">thêm vào giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sanpham-img-conten1">
+                        <a href="#">
+                            <div class="sanpham-img">
+                                <img src="anh/banhngot.jpg">
+                                <div class="sanpham-conten">
+                                    <a href="#">Khô heo, Dòng phổ thông</a>
+                                    <div class="sanpham-conten1">
+                                        <p class="p1">80,000đ</p>
+                                        <a href="#" class="p2">thêm vào giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="sanpham-img-conten1">
+                        <a href="#">
+                            <div class="sanpham-img">
+                                <img src="anh/banhngot.jpg">
+                                <div class="sanpham-conten">
+                                    <a href="#">Khô heo, Dòng phổ thông</a>
+                                    <div class="sanpham-conten1">
+                                        <p class="p1">80,000đ</p>
+                                        <a href="#" class="p2">thêm vào giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="sanpham-khac">
+            <a href="#">Xem thêm các sản phẩm khác<i class="fa fa-long-arrow-right"></i></a>
+        </div>
+    </div>
+    <div class="danhmuc-noibat">
+        <div class="danhmuc-noibat1">
+            <div class="sanpham-quangcao">
+                <span>Sản phẩm</span>
+                <h1>Danh mục nổi bật</h1>
+                <p>Sản phẩm được lấy từ nhiều nơi uy tín trên toàn quốc và chu kỳ an toàn nghiêm ngặt</p>
+            </div>
+
+            <div class="danhmuc-noibat2">
+                <div class="chung left" id="leftButton"><i class="fa fa-angle-left"></i></div>
+                <div class="chung right" id="rightButton"><i class="fa fa-angle-right"></i></div>
+                <div class="danhmuc-noibat3">
+                    <div class="danhmuc-noibat-sanpham">
+                        <a href="#">
+                            <div class="danhmuc-noibat-sanpham-img">
+                                <img src="anh/danhmuc-banhmut.jpg">
+                            </div>
+                            <div class="danhmuc-noibat-sanpham-conten">
+                                <a href="#">Bánh Mức</a>
+                                <span>(0 sản phẩm)</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="danhmuc-noibat-sanpham">
+                        <a href="#">
+                            <div class="danhmuc-noibat-sanpham-img">
+                                <img src="anh/danhmuc-banhmut.jpg">
+                            </div>
+                            <div class="danhmuc-noibat-sanpham-conten">
+                                <a href="#">Bánh Mức</a>
+                                <span>(3 sản phẩm)</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="danhmuc-noibat-sanpham">
+                        <a href="#">
+                            <div class="danhmuc-noibat-sanpham-img">
+                                <img src="anh/danhmuc-banhmut.jpg">
+                            </div>
+                            <div class="danhmuc-noibat-sanpham-conten">
+                                <a href="#">Bánh Mức</a>
+                                <span>(15 sản phẩm)</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="danhmuc-noibat-sanpham">
+                        <a href="#">
+                            <div class="danhmuc-noibat-sanpham-img">
+                                <img src="anh/danhmuc-banhmut.jpg">
+                            </div>
+                            <div class="danhmuc-noibat-sanpham-conten">
+                                <a href="#">Bánh Mức</a>
+                                <span>(8 sản phẩm)</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/style.js"></script>
+
+</body>
+
+</html>

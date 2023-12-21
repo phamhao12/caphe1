@@ -1,0 +1,1144 @@
+:root {
+    --chumobile: #333;
+    --chungoai: #333;
+    --chu: #fff;
+    --backgroup-menu: #27ae60;
+    --chu-hover: #e67e22;
+    --maumobile: #e74c3c;
+    --mauchuhover: #cfcdcd;
+    --mauchumenu: #beb6b6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--chumobile);
+}
+
+a:hover {
+    color: var(--maumobile);
+}
+
+li {
+    list-style: none;
+}
+
+/* dạng mobiler */
+.menu-thongtin-chung .menu-mobile {
+    display: none;
+}
+
+.menu-mobile {
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-mobile .menu-nav {
+    padding: 10px;
+    color: var(--maumobile);
+    cursor: pointer;
+
+}
+
+.menu-mobile .menu-giohang {
+    padding: 10px;
+}
+
+.menu-mobile .menu-giohang .cart-right {
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    background: #FF9800;
+    font-size: 12px;
+    right: 8px;
+    top: 3px;
+    color: #fff;
+    border: 1px px solid #fff;
+}
+
+/* dang pc thonng tin liên hệ gmail */
+.menu-thongtin-chung-pc1 {
+    background: var(--backgroup-menu);
+
+}
+
+.menu-thongtin-chung-pc1 .menu-thongtindangnhap {
+    display: none;
+
+}
+
+.menu-thongtin-chung-pc1 .menu-lienhe {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 25px;
+}
+
+.menu-thongtin-chung-pc1 .menu-lienhe-gmail {
+    margin: 5px;
+}
+
+.menu-thongtin-chung-pc1 .menu-mang-login {
+    display: flex;
+    margin: 5px;
+}
+
+.menu-lienhe .menu-mang-login ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu-lienhe .menu-mang-login a {
+    font-size: 14px;
+    color: var(--chu);
+    padding: 2px 10px;
+}
+
+.menu-lienhe .menu-mang-login a:hover {
+
+    color: var(--mauchuhover);
+
+}
+
+.menu-lienhe .menu-mang-login .cuoi {
+    border-right: 1px solid #fff;
+}
+
+.menu-lienhe .menu-lienhe-gmail a {
+    color: var(--chu);
+    padding: 2px 10px;
+    font-size: 14px;
+}
+
+.menu-lienhe .menu-lienhe-gmail a:hover {
+    color: var(--mauchuhover);
+
+}
+
+.menu-lienhe .menu-login-dangnhap a {
+    border-right: 1px solid #fff;
+}
+
+.menu-lienhe .menu-lienhe-gmail .mail i {
+    display: none;
+}
+
+.menu-lienhe .menu-lienhe-gmail .gmail {
+    border-right: 1px solid #fff;
+}
+
+/* dang pc menu -thong tin */
+.menu-thongtin-chung-pc2 {
+    margin: 15px;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .logo img {
+    max-height: 45px;
+    margin-right: 20px;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo ul {
+    display: flex;
+    list-style: none;
+    margin: 10px 10px;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .link {
+    font-weight: 600;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo li {
+    margin: 0 25px;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo a {
+    color: var(--chungoai);
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo a:hover {
+    color: var(--maumobile);
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-giohang-pc {
+    padding: 17px;
+    display: inline-block;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-giohang-pc .giohang {
+    color: var(--chungoai);
+    position: relative;
+    font-size: 25px;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-giohang-pc .cart-right-pc {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    background: #FF9800;
+    font-size: 12px;
+    right: -17px;
+    top: -11px;
+    color: #fff;
+
+}
+
+/* menu cap 2 trong sản phẩm */
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .hienthi-sanpham1 {
+    display: none;
+    width: 200px;
+    margin: 10px 0;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .hienthi-sanpham1 .bo-di {
+    display: none;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .hienthi-sanpham1 li a img {
+    max-width: 23px;
+    float: left;
+    margin-right: 5px;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .hienthi-sanpham1 li {
+    margin: 0;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .hienthi-sanpham1 a {
+    color: var(--chungoai);
+    padding: 8px 0;
+    display: block;
+    margin: 0;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .hienthi-sanpham1 a:hover {
+    color: var(--maumobile);
+
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .hienthi {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border-left: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+    border-top: 3px dotted #bc2a2a;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .hienthi .hienthi1 {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .hienthi .img {
+    width: 150px;
+    height: 130px;
+    margin: 0 10px;
+
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .hienthi img {
+    width: 150px;
+    height: 130px;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .hienthi .danhsach-menu {
+    display: block;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .hienthi .danhsach-menu .danhsach-menu-conten {
+    font-weight: 600;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .hienthi .menucon {
+    margin-top: 5px;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .hienthi .danhsach-menu li {
+    margin: 0 5px;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .hienthi .danhsach-menu li a {
+    color: var(--chumobile);
+    font-size: 12px;
+}
+
+.menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .hienthi .danhsach-menu li a:hover {
+    color: var(--maumobile);
+
+}
+
+/* danh muc san phẩm tìm kiếm và hosline */
+.menu-sanpham-timkiem .menu-sanpham-timkiem1 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.menu-sanpham-timkiem .menu-sanpham-timkiem1 .danhmuc-sanpham {
+    background: var(--maumobile);
+    padding: 13px;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+
+}
+
+.menu-sanpham-timkiem .menu-sanpham-timkiem1 ul {
+    list-style: none;
+    background: #fff;
+    overflow: visible;
+    border-top: none;
+    width: auto;
+}
+
+.menu-sanpham-timkiem .menu-sanpham-timkiem1 a {
+    color: var(--chungoai);
+    padding: 5px;
+    display: block;
+}
+
+.menu-sanpham-timkiem .menu-sanpham-timkiem1 .hienthi-sanpham {
+    display: none;
+    position: absolute;
+    width: 220px;
+}
+
+.menu-sanpham-timkiem .menu-sanpham-timkiem1 .hienthi-sanpham li a img {
+    max-width: 22px;
+    float: left;
+    margin-right: 5px;
+}
+
+.menu-sanpham-timkiem .menu-sanpham-timkiem1 .hienthi-sanpham li a::before {
+    content: '\f105';
+    font-family: FontAwesome, sans-serif;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    margin: 8px;
+    transform: translate(0, -50%);
+    color: #666;
+}
+
+.menu-sanpham-timkiem .menu-sanpham-timkiem1 .hienthi-sanpham li a:hover {
+    color: var(--maumobile);
+}
+
+.menu-timkiem {
+    display: table;
+    width: 60%;
+}
+
+.timkiem {
+    display: flex;
+    border: 1px solid #333;
+    border-radius: 20px;
+}
+
+.timkiem input {
+    display: table-cell;
+    width: 100%;
+    max-width: none;
+    float: left;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+}
+
+.timkiem input[type="text"] {
+    outline: none;
+
+}
+
+.timkiem button {
+    background: transparent;
+    border: none;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.hos-line {
+    display: none;
+}
+
+.hosline {
+    display: flex;
+}
+
+.hosline i {
+    font-size: 25px;
+    color: #e22424;
+    margin: 5px;
+}
+
+.hosline .thongtin-hos h3 {
+    cursor: pointer;
+}
+
+.hosline .thongtin-hos h3:hover {
+    color: var(--mauchumenu);
+
+}
+
+/* thông báo */
+.thongbao1 {
+    padding: 20px 0;
+}
+
+.thongbao-container {
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.thongbao-chung {
+    display: flex;
+}
+
+.thongbao-chung-img img {
+    max-width: 40px;
+    margin-right: 10px;
+}
+
+.thongbao-chung-conten {
+    margin-top: 4px;
+}
+
+.thongbao-chung-conten a {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.thongbao-chung-conten p {
+    color: var(--mauchumenu);
+    font-size: 15px;
+}
+
+/* khuyễn mãi */
+.khuyenmai1 {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+}
+
+.khuyenmai1 .khuyenmai-container {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.khuyenmai-container .khuyenmai-combo img,
+.khuyenmai-quatang img {
+    width: 480px;
+    height: 250px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.khuyenmai-combo,
+.khuyenmai-quatang {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 48%;
+}
+
+.khuyenmai-combo-img,
+.khuyenmai-quatang-img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease;
+}
+
+.khuyenmai-combo-conten1,
+.khuyenmai-quatang-conten1 {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    opacity: 0;
+    transition: top 0.8s ease, left 0.8s ease, opacity 0.8s ease;
+}
+
+.khuyenmai-combo-conten2,
+.khuyenmai-quatang-conten2 {
+    position: absolute;
+    right: -100%;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    opacity: 0;
+    transition: bottom 0.8s ease, right 0.8s ease, opacity 0.8s ease;
+}
+
+.khuyenmai-combo:hover .khuyenmai-combo-img,
+.khuyenmai-quatang:hover .khuyenmai-quatang-img {
+    opacity: 0.5;
+}
+
+.khuyenmai-combo:hover .khuyenmai-combo-conten1,
+.khuyenmai-quatang:hover .khuyenmai-quatang-conten1 {
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+
+.khuyenmai-combo:hover .khuyenmai-combo-conten2,
+.khuyenmai-quatang:hover .khuyenmai-quatang-conten2 {
+    bottom: 0;
+    right: 0;
+    opacity: 0.3;
+}
+
+/* sản phẩm */
+.sanpham {
+    margin-bottom: 30px;
+   
+}
+
+.sanpham1 {
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sanpham-quangcao {
+    text-align: center;
+}
+
+.sanpham-quangcao span {
+    color: var(--backgroup-menu);
+}
+
+.sanpham-quangcao p {
+    color: #696969;
+}
+
+.sanpham-khuyenmai ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.sanpham-khuyenmai ul li {
+    font-size: 20px;
+    margin: 10px;
+
+}
+
+.sanpham-khuyenmai a {
+    color: #565656;
+}
+
+.sanpham-khuyenmai a:hover {
+    color: var(--maumobile);
+}
+
+.sanpham-img-contenn {
+    display: block;
+}
+
+.sanpham-img-conten {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.sanpham-img-conten1 {
+    cursor: pointer;
+    width: 180px;
+}
+
+.sanpham-img-conten1 img {
+    width: 180px;
+    height: 200px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.sanpham-conten1 {
+    display: flex;
+    position: relative;
+}
+
+.p1,
+.p2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+    color: var(--maumobile);
+    display: block;
+}
+
+.p2 {
+    left: -100%;
+}
+
+.sanpham-img-conten1:hover .p1 {
+    left: 100%;
+    opacity: 0.5;
+    width: 100%;
+}
+
+.sanpham-img-conten1:hover .p2 {
+    left: 0;
+    opacity: 1;
+    width: 100%;
+}
+
+.sanpham-img-conten1:hover .p1,
+.sanpham-img-conten1:not(:hover) .p2 {
+    opacity: 0;
+    width: 100%;
+}
+
+.chung {
+    display: none;
+}
+
+.sanpham-khac {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 30px 0;
+
+}
+
+.sanpham-khac a {
+    position: relative;
+}
+
+/* danh mục nổi bật */
+.danhmuc-noibat{
+    border-top: 1px solid #d2cccc;
+    padding: 40px 0;
+}
+.danhmuc-noibat1 {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.sanpham-quangcao {
+    display: block;
+    text-align: center;
+}
+
+.danhmuc-noibat3 {
+    display: flex;
+    margin: 10px 0;
+}
+
+.danhmuc-noibat-sanpham {
+    margin: 0 10px;
+    border: 1px solid #333;
+    position: relative;
+}
+
+.danhmuc-noibat-sanpham-img img {
+    width: 230px;
+    height: 200px;
+}
+
+.danhmuc-noibat-sanpham-conten {
+    text-align: center;
+    display: block;
+}
+
+.danhmuc-noibat-sanpham-conten a {
+    padding-bottom: 3px;
+    display: block;
+    font-size: 20px;
+}
+
+.danhmuc-noibat-sanpham-conten span {
+    position: relative;
+    bottom: -9px;
+    left: 0;
+    background: #fff;
+    padding: 0 10px;
+}
+/* dạng mobile */
+@media  screen and (max-width:765px) {
+    .menu-thongtin-chung .menu-mobile {
+        display: flex;
+        margin: 5px 10px;
+    }
+
+    .menu-thongtin-chung-pc {
+        display: none;
+        border: 1px solid #333;
+        position: absolute;
+        width: 100%;
+        background: #fff;
+        z-index: 999;
+    }
+
+    .menu-thongtin-chung-pc1 {
+        background: #fff;
+    }
+
+    .menu-thongtin-chung-pc1 .menu-thongtindangnhap {
+        display: block;
+        background: red;
+    }
+
+    .menu-thongtin-chung-pc1 .menu-thongtindangnhap .menu-thongtindangnhap1 {
+        display: flex;
+        margin: 0 20px;
+    }
+
+    .menu-thongtin-chung-pc1 .menu-thongtindangnhap .menu-thongtindangnhap1 .menu-thongtindangnhap-conten {
+        color: var(--chu);
+        margin: 5px 0;
+        font-size: 17px;
+    }
+
+    .menu-thongtin-chung-pc1 .menu-thongtindangnhap .menu-thongtindangnhap1 .menu-thongtindangnhap-conten p {
+        padding: 3px 0;
+    }
+
+    .menu-thongtin-chung-pc1 .menu-thongtindangnhap .menu-thongtindangnhap1 .menu-thongtindangnhap-img {
+        margin: 0 10px;
+    }
+
+    .menu-thongtin-chung-pc1 .menu-lienhe {
+        flex-direction: column;
+
+    }
+
+    .menu-lienhe .menu-mang-login .menu-login-dangnhap {
+        padding: 0 0 10px 0;
+    }
+
+    .menu-lienhe .menu-mang-login .menu-login-dangnhap a {
+        border: none;
+        font-size: 18px;
+    }
+
+    .menu-lienhe .menu-mang-login a {
+        color: var(--chumobile);
+        font-size: 18px;
+    }
+
+    .menu-lienhe .menu-mang-login {
+        flex-direction: column;
+    }
+
+    .menu-lienhe .menu-mang-login ul {
+        display: none;
+    }
+
+    .menu-lienhe .menu-lienhe-gmail .mail i {
+        display: block;
+        margin: 0 3px;
+    }
+
+    .menu-lienhe .menu-lienhe-gmail .gmail {
+        display: none;
+    }
+
+    .menu-lienhe .menu-lienhe-gmail a {
+        color: var(--chumobile);
+        font-size: 18px;
+        display: flex;
+    }
+
+    .menu-thongtin-chung-pc2 {
+        margin: 5px;
+    }
+
+    .menu-thongtin-chung-pc2 .menu-lienhe-gioithieu {
+        border-top: 1px solid #d2cccc;
+        border-bottom: 1px solid #d2cccc;
+    }
+
+
+    .menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .hienthi-sanpham1 li {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 0 10px;
+    }
+
+    .menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .hienthi-sanpham1 li i {
+        padding: 9px 19px;
+        text-align: right;
+    }
+
+    .menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo li {
+        margin: 0 10px;
+    }
+
+    .menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo img {
+        display: none;
+    }
+
+    .menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-giohang-pc {
+        display: none;
+    }
+
+    .menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo ul {
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo a {
+        display: block;
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    .menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .hienthi-sanpham1 {
+        display: none;
+        width: 380px;
+        height: 170px;
+        overflow: auto;
+        border-top: 1px solid #ccc8c8;
+        border-bottom: 1px solid #ccc8c8;
+        border-radius: 0px;
+    }
+
+    .menu-thongtin-chung-pc2 .menu-lienhe-gioithieu .menu-gioithieu-logo .hienthi-sanpham1 .noihienthi {
+        display: none;
+        margin-left: 10px;
+    }
+
+    .hos-line {
+        display: block;
+        margin: 0 10px;
+    }
+
+    .hos-line h3 {
+        color: #cfcdcd;
+    }
+
+    .thongtin-hos {
+        display: flex;
+    }
+
+    .thongtin-hos p {
+        padding: 0 8px;
+    }
+
+    .thongtin-hos a {
+        color: var(--maumobile);
+    }
+
+    /* menu-danhmuc */
+    .menu-sanpham-timkiem .menu-sanpham-timkiem1 .danhmuc-sanpham {
+        display: none;
+    }
+
+    .menu-sanpham-timkiem .menu-sanpham-timkiem1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hosline,
+    .hienthi {
+        display: none;
+    }
+
+    .hienthi-sanpham1 {
+        display: block;
+    }
+
+
+    /* tim kiem dang mobile */
+    .menu-timkiem {
+        display: table;
+        width: 100%;
+        margin: 2px 10px 10px;
+    }
+
+    .timkiem {
+        display: flex;
+        border: 1px solid #c24e4e;
+        border-radius: 0px;
+    }
+
+    .timkiem input {
+        display: table-cell;
+        width: 100%;
+        max-width: none;
+        float: left;
+        padding-left: 25px;
+        padding-right: 25px;
+        border: none;
+        font-size: 17px;
+        height: 40px;
+    }
+
+    .timkiem input[type="text"] {
+        outline: none;
+
+    }
+
+    .timkiem button {
+        background: #c24e4e;
+        border: 1px solid #c24e4e;
+        padding: 10px 20px;
+        cursor: pointer;
+
+    }
+
+    .timkiem button i {
+        color: var(--chu);
+        font-size: 16px;
+    }
+
+    /* thông báo */
+    .thongbao1 {
+        padding: 10px;
+    }
+
+    .thongbao-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 0 10px;
+    }
+
+    .thongbao-chung {
+        display: block;
+        text-align: center;
+        margin: 0 10px;
+    }
+
+    .thongbao-chung-conten a {
+        font-size: 16px;
+    }
+
+    .thongbao-chung-conten p {
+        font-size: 14px;
+    }
+
+    .thongbao-chatluong {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .thongbao-giaohang {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .thongbao-dienthoai {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .thongbao-doitra {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    /* khuyễn mãi */
+    .khuyenmai1 .khuyenmai-container {
+        margin: 0 5px;
+        position: relative;
+    }
+
+    .khuyenmai-container .khuyenmai-combo img,
+    .khuyenmai-quatang img {
+        width: 100%;
+        height: 100px;
+        margin: 0 7px;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    /* sản phẩm */
+    .sanpham-khuyenmai ul li {
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .sanpham-quangcao span {
+        font-size: 14px;
+    }
+
+    .sanpham-quangcao h1 {
+        font-size: 25px;
+    }
+
+    .sanpham-quangcao p {
+        font-size: 13px;
+    }
+
+    .sanpham-img-contenn {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .sanpham-img-conten1 {
+        display: block;
+        transition: transform 0.5s ease;
+        flex: 0 0 auto;
+        margin: 0 5px;
+        box-sizing: border-box;
+        margin-right: 10px;
+    }
+
+    .sanpham-img-contenn .chung {
+        position: absolute;
+        top: 50%;
+        font-size: 50px;
+        color: #333;
+        background: #fff;
+        z-index: 999;
+        padding: 0 15px;
+        border: 1px solid #333;
+        cursor: pointer;
+        display: block;
+    }
+
+    .p1,
+    .p2 {
+        position: relative;
+    }
+
+    .p2 {
+        display: none;
+    }
+
+    .trai {
+        left: 0;
+    }
+
+    .phai {
+        right: 0;
+    }
+
+    .sanpham-img-contenn {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .sanpham-img-conten {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+
+    .chung {
+        cursor: pointer;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .chung.hide {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* danh mục sản phẩm  */
+    .danhmuc-noibat2 {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .danhmuc-noibat-sanpham {
+        width: 350px;
+        transition: transform 0.5s ease;
+        flex: 0 0 auto;
+        margin: 0 18px;
+        box-sizing: border-box;
+        
+    }
+    .danhmuc-noibat-sanpham-img img{
+        width: 100%;
+        height: 300px;
+    }
+    .danhmuc-noibat2 .chung {
+        position: absolute;
+        top: 50%;
+        font-size: 50px;
+        color: #333;
+        background: #fff;
+        z-index: 999;
+        padding: 0 15px;
+        border: 1px solid #333;
+        cursor: pointer;
+        display: block;
+    }
+
+    .left {
+        left: 0;
+    }
+
+    .right {
+        right: 0;
+    }
+
+    .danhmuc-noibat2 {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .danhmuc-noibat3 {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+
+    .chung {
+        cursor: pointer;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .chung.hide {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+}
